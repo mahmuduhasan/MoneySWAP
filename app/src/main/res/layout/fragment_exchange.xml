@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ExchangeFragment"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MoneySWAP"
+            android:textSize="50dp"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="30dp"
+            android:padding="20dp">
+
+            <Spinner
+                android:id="@+id/exchangeFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_forward"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/exchangeTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/convertAmountFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:layout_marginRight="20dp"
+                android:inputType="number"
+                android:hint="Enter Amount"
+                android:textColorHint="@color/black"
+                android:drawableRight="@drawable/ic_baseline_arrow_forward" />
+
+            <TextView
+                android:id="@+id/convertAmountTo"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:ems="10" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/convertButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convert"
+            android:textAllCaps="false"
+            android:layout_marginTop="20px" />
+    </LinearLayout>
+</layout>
